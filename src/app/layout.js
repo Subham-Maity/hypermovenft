@@ -1,9 +1,14 @@
 import './globals.css'
 import localFont from 'next/font/local'
+import { Urbanist} from "next/font/google"
+import Navbar from './components/Navbar'
 
 const primary = localFont({src: '../../public/fonts/aquire.woff2', display: 'swap',variable: '--font-primary'})
 
 const primaryBold = localFont({src: '../../public/fonts/aquire-bold.woff2', display: 'swap',variable: '--font-primary-bold'})
+
+const secondary = Urbanist({display: 'swap',variable: '--font-secondary',subsets: ['latin-ext']})
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,8 +17,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${primary.className} ${primaryBold.className}`}>
-      <body >{children}</body>
+    <html lang="en" className={` ${primary.className} ${primaryBold.className}`}>
+      <body >
+      <Navbar />{children}</body>
     </html>
   )
 }
