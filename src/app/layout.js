@@ -1,7 +1,9 @@
 import './globals.css'
 import localFont from 'next/font/local'
 
-const primary = localFont({src:})
+const primary = localFont({src: '../../public/fonts/aquire.woff2', display: 'swap',variable: '--font-primary'})
+
+const primaryBold = localFont({src: '../../public/fonts/aquire-bold.woff2', display: 'swap',variable: '--font-primary-bold'})
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${primary.className} ${primaryBold.className}`}>
       <body >{children}</body>
     </html>
   )
