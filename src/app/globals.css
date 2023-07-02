@@ -25,3 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer components {
+  .aquire {
+    font-family: "Aquire", sans-serif;
+  }
+}

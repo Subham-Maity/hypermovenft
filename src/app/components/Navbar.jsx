@@ -7,6 +7,8 @@ import Link from "next/link";
 import logo from "../../../public/logo.png";
 import WalletConnect from "./Button/WalletConnect";
 import { FaTimes } from "react-icons/fa";
+import { FaWallet } from "react-icons/fa";
+
 
 const Navbar = () => {
   const [activePage, setActivePage] = useState("home");
@@ -83,8 +85,8 @@ const Navbar = () => {
                 href={link.href}
                 className={
                   link.active
-                    ? "text-white hover:text-gray-300"
-                    : "text-gray-400 hover:text-white"
+                    ? "text-white hover:text-[#38FFDC]"
+                    : "text-gray-400 hover:text-[#38FFDC]"
                 }
               >
                 {link.label}
@@ -114,7 +116,7 @@ const Navbar = () => {
         </span>
         <div className="">
 
-        <WalletConnect classNames="text-sm lg:text-xl" />
+        <WalletConnect classNames="text-sm lg:text-xl" icon={<FaWallet size={16} />}/>
         </div>
       </div>
 

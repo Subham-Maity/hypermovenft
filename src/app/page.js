@@ -1,11 +1,13 @@
+import Banner from '@/pages/home/Banner'
 import Image from 'next/image'
 
 
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-<div className="font-primary text-3xl ">Popular Collections </div>
+    <main className="">
+<Banner/>
+
 
     </main>
   )
