@@ -14,7 +14,7 @@ const WalletConnect = ({classNames}) => {
       className={`${classNames} flex items-center space-x-2 rounded-full border-2 border-blue-500 px-4 py-2 text-white hover:bg-white hover:text-blue-500 hover:border-white text-xl`}
     >
       <FaWallet size={16} />
-      <span className="">Connect Wallet</span>
+      <span className="lg:block hidden">Connect Wallet</span>
     </button>
   );
 };
