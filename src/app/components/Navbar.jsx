@@ -116,7 +116,7 @@ const Navbar = () => {
         </span>
         <div className="">
 
-        <WalletConnect classNames="text-sm lg:text-xl" icon={<FaWallet size={16} />}/>
+        <WalletConnect title="Connect Wallet" classNames="text-sm lg:text-xl" icon={<FaWallet size={16} />}/>
         </div>
       </div>
 
