@@ -16,6 +16,9 @@ module.exports = {
         primary: ['var(--font-primary)', 'sans-serif'],
         primaryBold: ['var(--font-primary-bold)', 'sans-serif'],
         secondary: ['var(--font-secondary)', 'sans-serif'],
+      },
+      colors: {
+        hover: "#38FFDC",
       }
     }
   },

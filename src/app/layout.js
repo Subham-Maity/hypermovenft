@@ -2,6 +2,7 @@ import './globals.css'
 import localFont from 'next/font/local'
 import { Urbanist} from "next/font/google"
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const primary = localFont({src: '../../public/fonts/aquire.woff2', display: 'swap',variable: '--font-primary'})
 
@@ -19,7 +20,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={` ${primary.className} ${primaryBold.className}`}>
       <body >
-      <Navbar />{children}</body>
+      <Navbar />
+      {children}
+      <Footer />
+      </body>
     </html>
   )
 }
