@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import Navbar from "./components/ui/Navbar";
 
 const urbanist = localFont({
   src: [
