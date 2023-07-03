@@ -48,7 +48,7 @@ const ConnectWallets = ({classNames, icon, title, isText}) => {
                 {icon}
                 <span className={`lg:block ${isText ? '' : 'hidden'}`}>{title}</span>
             </button>
-            <ConnectWallet className="hidden" ref={connectWalletRef}/> // add a class name and a ref to the ConnectWallet component
+            <ConnectWallet className="hidden" ref={connectWalletRef}/>
         </div>
     );
 };
