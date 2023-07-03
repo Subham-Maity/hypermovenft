@@ -11,7 +11,7 @@ const WalletConnect = ({classNames,icon,title,isText}) => {
   return (
     <button
       onClick={handleConnect}
-      className={`${classNames} flex items-center space-x-2 rounded-full border-2 border-blue-500 px-4 py-2 text-white hover:bg-white hover:text-blue-500 hover:border-white text-xl`}
+      className={`${classNames} flex items-center space-x-2 rounded-full border-2 border-blue-500 px-4 py-2 text-white hover:bg-white hover:text-blue-500 hover:border-white `}
     >
       {icon }
       <span className={`lg:block ${isText? '': 'hidden'}`}>{title}</span>

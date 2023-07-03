@@ -4,7 +4,7 @@ import { RiFacebookFill, RiTwitterFill, RiInstagramFill,RiLinkedinBoxFill, RiDis
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white w-full">
+    <footer className="bg-black text-white w-full flex items-center justify-center">
       <div className="flex w-full mx-auto py-8 px-4 justify-around items-start">
         <div className="flex flex-col items-center justify-center gap-4 mb-8">
           <div>
