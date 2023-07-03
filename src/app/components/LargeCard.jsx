@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const LargeCard = ({ banner, images, text, createdBy }) => {
+const LargeCard = ({banner, images, text, createdBy}) => {
     return (
         <div className="w-full mt-2 bg-gray-700 rounded-2xl m-5">
             {banner && (

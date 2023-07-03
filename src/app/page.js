@@ -16,7 +16,7 @@ export default function Home() {
             <Collections sampleMap={sampleMap}/>
             <Features/>
 
-            <Viewed/>
+            <Viewed sampleMap={sampleMap}/>
 
             <Auctions/>
 

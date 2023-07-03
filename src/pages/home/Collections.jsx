@@ -2,8 +2,8 @@
 
 import React, {useState} from 'react'
 import Card from "@/app/components/Card";
-import { useSwipeable } from 'react-swipeable'
-import { FaArrowLeft, FaArrowRight, FaCircle } from 'react-icons/fa'
+import {useSwipeable} from 'react-swipeable'
+import {FaArrowLeft, FaArrowRight, FaCircle} from 'react-icons/fa'
 
 const Collections = ({sampleMap}) => { // receive sampleMap as a prop
     const [index, setIndex] = useState(0) // state to keep track of the current card
@@ -14,7 +14,8 @@ const Collections = ({sampleMap}) => { // receive sampleMap as a prop
         trackMouse: true
     })
     return (
-        <div className="flex flex-col gap-2 justify-center items-center h-screen bg-gray-400" {...handlers}>
+        <div
+            className="flex flex-col gap-2 justify-center items-center h-screen bg-gradient-to-r from-purple-950 via-pink-800 to-red-950" {...handlers}>
             <div className="text-4xl text-amber-50 font-bold mb-4">Latest NFTS</div>
             <div className="flex gap-2 items-center justify-center"> {/* card container */}
                 {
@@ -32,13 +33,15 @@ const Collections = ({sampleMap}) => { // receive sampleMap as a prop
                 }
             </div>
             <div className="flex gap-2 items-center justify-center"> {/* arrow and bullet point icons */}
-                <FaArrowLeft size={48} color="white" onClick={() => setIndex((index - 1 + sampleMap) % sampleMap)} /> {/* left arrow button */}
+                <FaArrowLeft size={48} color="white"
+                             onClick={() => setIndex((index - 1 + sampleMap) % sampleMap)}/> {/* left arrow button */}
                 {
                     Array(sampleMap).fill(0).map((_, i) => (
-                        <FaCircle key={i} size={16} color={i === index ? "white" : "gray"} /> // active bullet point is white, others are gray
+                        <FaCircle key={i} size={16} color={i === index ? "white" : "gray"}/> // active bullet point is white, others are gray
                     ))
                 }
-                <FaArrowRight size={48} color="white" onClick={() => setIndex((index + 1) % sampleMap)} /> {/* right arrow button */}
+                <FaArrowRight size={48} color="white"
+                              onClick={() => setIndex((index + 1) % sampleMap)}/> {/* right arrow button */}
             </div>
         </div>
     )
