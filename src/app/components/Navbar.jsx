@@ -8,8 +8,8 @@ import logo from "../../../public/logo.png";
 import WalletConnect from "./Button/MainButton";
 import {FaTimes} from "react-icons/fa";
 import {FaWallet} from "react-icons/fa";
-import ConnectWallet from "@/app/components/Button/ConnectWallet";
-
+import {ConnectWallet} from "@thirdweb-dev/react"
+import ConnectWallets from "@/app/components/Button/ConnectWallets";
 
 const Navbar = () => {
     const [activePage, setActivePage] = useState("home");
@@ -118,6 +118,8 @@ const Navbar = () => {
                 <div className="">
 
                     <ConnectWallet title="Wallet Connect " classNames="text-sm lg:text-xl" icon={<FaWallet size={16}/>}/>
+
+
                 </div>
             </div>
 
