@@ -6,7 +6,7 @@
 
 body {
   background-image: url("../../public/ellipse.png");
-  background: aqua;
+
 }
 
 @layer components {
