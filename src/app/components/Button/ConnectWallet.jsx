@@ -1,10 +1,38 @@
 "use client"
-import React from "react";
-import {FaWallet} from "react-icons/fa";
+import React, { useState, useEffect } from "react";
 
-const MainButton = ({classNames, icon, title, isText}) => {
+const ConnectWallet = ({classNames, icon, title, isText}) => {
+
+    const [extensionUrl, setExtensionUrl] = useState(null);
+    const [showAlert, setShowAlert] = useState(true);
+
+    useEffect(() => {
+
+        const url = window.web3?.currentProvider?.extensionUrl;
+        // if the url exists, set the extensionUrl state
+        if (url) {
+            setExtensionUrl(url);
+        } else {
+
+            if (showAlert) {
+
+                const response = window.confirm("Please install MetaMask");
+
+                if (response) {
+                    window.location.href = "https://metamask.io/download.html";
+                } else {
+
+                    setShowAlert(false);
+                }
+            }
+        }
+    }, [showAlert]);
+
     const handleConnect = () => {
-        // do something to connect the wallet
+
+        if (extensionUrl) {
+            window.location.href = `${extensionUrl}/home.html#onboarding/welcome`;
+        }
     };
 
     return (
@@ -18,4 +46,4 @@ const MainButton = ({classNames, icon, title, isText}) => {
     );
 };
 
-export default MainButton;
+export default ConnectWallet;
