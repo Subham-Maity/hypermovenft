@@ -13,6 +13,7 @@ export default function Home() {
     return (
         <main className="">
             <Banner/>
+
             <Collections sampleMap={sampleMap}/>
             <Features/>
 
