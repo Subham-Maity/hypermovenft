@@ -6,6 +6,7 @@ import LargeCard from "@/app/components/LargeCard";
 import Features from "@/pages/home/Features";
 import Auctions from "@/pages/home/Auctions";
 import Viewed from "@/pages/home/Viewed";
+import MetaConnectAlert from "@/app/components/Alert/MetaConnectAlert";
 
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
     return (
         <main className="">
             <Banner/>
-
+            {/*<MetaConnectAlert/>*/}
             <Collections sampleMap={sampleMap}/>
             <Features/>
 
