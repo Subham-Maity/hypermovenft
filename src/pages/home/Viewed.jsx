@@ -15,7 +15,7 @@ const Viewed = ({sampleMap}) => { // receive sampleMap as a prop
     })
     return (
         <div
-            className="flex flex-col gap-2 justify-center items-center h-screen bg-gradient-to-r from-purple-950 via-pink-800 to-red-950" {...handlers}>
+            className="flex flex-col gap-2 justify-center items-center h-screen bg-gradient-to-r from-purple-950 via-pink-800 to-red-950 bg-viewed-custom" {...handlers}>
             <div className="text-4xl text-amber-50 font-bold mb-4">Latest NFTS</div>
             <div className="flex gap-2 items-center justify-center"> {/* card container */}
                 {

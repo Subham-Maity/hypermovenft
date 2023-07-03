@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import WalletConnect from "@/app/components/Button/WalletConnect";
+import WalletConnect from "@/app/components/Button/MainButton";
 import {FaRocket, FaNewspaper} from "react-icons/fa";
 
 const Banner = () => {

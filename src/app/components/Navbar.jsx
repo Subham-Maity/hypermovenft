@@ -5,9 +5,10 @@ import Image from "next/image";
 import {FaSearch, FaBars} from "react-icons/fa";
 import Link from "next/link";
 import logo from "../../../public/logo.png";
-import WalletConnect from "./Button/WalletConnect";
+import WalletConnect from "./Button/MainButton";
 import {FaTimes} from "react-icons/fa";
 import {FaWallet} from "react-icons/fa";
+import ConnectWallet from "@/app/components/Button/ConnectWallet";
 
 
 const Navbar = () => {
@@ -116,7 +117,7 @@ const Navbar = () => {
         </span>
                 <div className="">
 
-                    <WalletConnect title="Connect Wallet" classNames="text-sm lg:text-xl" icon={<FaWallet size={16}/>}/>
+                    <ConnectWallet title="Wallet Connect " classNames="text-sm lg:text-xl" icon={<FaWallet size={16}/>}/>
                 </div>
             </div>
 

@@ -7,7 +7,7 @@ const Features = () => {
 
     return (
         <div
-            className="flex flex-col gap-2 justify-center items-center h-screen bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-violet-900 via-amber-900 to-purple-200">
+            className="flex flex-col gap-2 justify-center items-center h-screen bg-features-custom">
 
             <div className="text-4xl text-amber-50 font-bold mb-4">Popular Collections</div>
 

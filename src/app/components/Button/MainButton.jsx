@@ -3,7 +3,7 @@
 import React from "react";
 import { FaWallet } from "react-icons/fa";
 
-const WalletConnect = ({classNames,icon,title,isText}) => {
+const MainButton = ({classNames,icon,title,isText}) => {
   const handleConnect = () => {
     // do something to connect the wallet
   };
@@ -19,4 +19,4 @@ const WalletConnect = ({classNames,icon,title,isText}) => {
   );
 };
 
-export default WalletConnect;
+export default MainButton;

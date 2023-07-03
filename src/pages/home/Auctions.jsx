@@ -4,7 +4,8 @@ import logo from "../../../public/logo.png";
 
 const Auctions = () => {
     return (
-        <div className="h-screen bg-[#1D1D24] ">
+
+        <div className="text-white w-full  h-35 bg-[#1D1D24] ">
             <div className="flex justify-between">
                 <div className="text-4xl text-amber-50 font-bold mb-4 ml-16">Recent Auctions</div>
                 <Link href="/">

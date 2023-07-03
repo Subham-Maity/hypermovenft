@@ -2,7 +2,7 @@
 
 import React, {useState} from "react";
 import {FaHeart, FaWallet} from "react-icons/fa";
-import WalletConnect from "@/app/components/Button/WalletConnect";
+import WalletConnect from "@/app/components/Button/MainButton";
 import Image from "next/image";
 import Link from "next/link";
 
