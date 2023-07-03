@@ -20,7 +20,7 @@ const Card = ({image, imageText, price, loveCount, label, isHoverable, link}) =>
 
     return (
         <div
-            className="hover:-translate-y-2 transition-all ease-in-out duration-500 w-80 p-4 flex  flex-col gap-4 bg-gray-700 rounded-2xl overflow-hidden relative"
+            className="hover:-translate-y-2 transition-all ease-in-out duration-500 w-80 p-4 flex flex-col gap-4 bg-gray-700 rounded-2xl overflow-hidden relative"
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseOut}>
             <div className="flex justify-between items-center gap-2 w-full">
                 <div className="flex items-center justify-center gap-2">
