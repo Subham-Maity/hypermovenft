@@ -6,7 +6,7 @@ import WalletConnect from "@/app/components/Button/MainButton";
 import Image from "next/image";
 import Link from "next/link";
 
-const Card = ({image, imageText, price, loveCount, label, isHoverable, link}) => {
+const Card = ({image, imageText, price, loveCount, label, isHoverable, multiplier, link}) => {
     const [isHovered, setIsHovered] = useState(false);
 
     // Handle mouse enter and mouse leave to show floating button
@@ -75,7 +75,7 @@ const Card = ({image, imageText, price, loveCount, label, isHoverable, link}) =>
                 {price && (
                     <div className="flex justify-start items-start mb-2 flex-col w-full">
             <span className="text-white mb-4 font-bold font-2xl">
-              Multiplier 2x
+              {multiplier}
             </span>
                         <span className="text-white flex justify-between w-full">
               <p>{price}</p>{" "}
