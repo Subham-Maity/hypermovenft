@@ -27,7 +27,7 @@ const Navbar = () => {
         },
         {
             label: "Consumables",
-            href: "/consumables",
+            href: "/collection",
             active: activePage === "consumables",
         },
         {

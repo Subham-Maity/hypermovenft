@@ -1,23 +1,22 @@
 "use client";
-// Collections.jsx
 
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-// Import Swiper styles
+
 import 'swiper/swiper.min.css';
 import 'swiper/components/pagination/pagination.min.css'
 import 'swiper/components/navigation/navigation.min.css'
 import Card from "@/app/components/Card";
 
-import {sampleMap} from '../../../public/Demo'; // import sampleMap from Demo.js
+import {sampleMap} from '../../../public/Demo';
 const Collections = () => {
     const swiperRef = useRef(null); // create a ref for Swiper instance
     return (
-        <div className="flex flex-col gap-2 justify-center items-center h-screen bg-collection-custom">
+        <section>
+        <div className="flex flex-col gap-2 justify-center items-center h-screen bg-collection-custom ">
             <div className="text-4xl text-amber-50 font-bold mb-4">Latest NFTS</div>
-            <div className="flex gap-2 items-center justify-center"> {/* card container */}
+            <div className="flex gap-2 items-center justify-center "> {/* card container */}
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={10}
@@ -57,5 +56,7 @@ const Collections = () => {
                         </SwiperSlide>
                     ))
                     }
-                </Swiper></div></div>)}
+                </Swiper></div></div>
+        </section>)}
+
 export default Collections;
