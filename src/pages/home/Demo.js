@@ -1,5 +1,5 @@
 // Demo.js
-const sampleMap = [
+export const sampleMap = [
   {
     image: "https://fabweltmarketplace.s3.us-east-2.amazonaws.com/2023/2/10/nft/33fe8b4c-b5a6-4377-a8a1-330b58a55138",
     imageText: "Hypermove",
@@ -67,4 +67,4 @@ const sampleMap = [
 
 ];
 
-export default sampleMap; // export sampleMap as default
+
