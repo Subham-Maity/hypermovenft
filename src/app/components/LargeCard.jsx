@@ -22,7 +22,7 @@ const LargeCard = ({banner, images, text, createdBy}) => {
                     {images.map((image, index) => (
                         <div key={index} className="flex justify-center">
                             <Image
-                                className="rounded-[25px] gap-4 p-2"
+                                className="rounded-[25px] gap-4 p-2 sm:w-[150px] md:w-[200px] lg:w-[300px]"
                                 src={image.image}
                                 height={600}
                                 width={300}

@@ -44,7 +44,8 @@ export const sampleMap = [
     label: "POLYGON",
     link: "https://example.com/link2",
     multiplier: "Multiplier 11x"
-  },
+  }
+  ,
   {
     image: "https://fabweltmarketplace.s3.us-east-2.amazonaws.com/2023/3/27/nft/428ceb5f-14e3-4ec5-9d98-45e0e46d954e",
     imageText: "Hypermove",

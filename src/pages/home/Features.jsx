@@ -1,17 +1,23 @@
 "use client";
 import React, {useState} from 'react';
 import LargeCard from "@/app/components/LargeCard";
+import Link from "next/link";
 
 const Features = () => {
     const [sampleMap] = useState(3);
 
     return (
-        <div
-            className="flex flex-col gap-2 justify-center items-center h-screen bg-features-custom">
+        <section
+            className="flex flex-col gap-2 justify-center items-center min-h-screen h-auto bg-features-custom">
 
-            <div className="text-4xl text-amber-50 font-bold mb-4">Popular Collections</div>
+            <div className="flex justify-between px-4 md:px-16 items-center w-full">
+                <div className="text-4xl text-amber-50 font-bold mb-4">Popular Collections</div>
+                <Link href="/">
+                    <div className="text-xl text-amber-50 font-bold hidden md:block">EXPLORE MORE</div>
+                </Link>
+            </div>
 
-            <div className="flex gap-2 items-center justify-center ">
+            <div className="flex gap-2 items-center justify-center flex-wrap sm:flex-nowrap w-full px-4 md:px-16">
                 {Array(sampleMap)
                     .fill(0)
                     .map((_, i) => (
@@ -37,7 +43,7 @@ const Features = () => {
                         />
                     ))}
             </div>
-        </div>
+        </section>
     );
 };
 
