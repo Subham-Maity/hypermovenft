@@ -11,7 +11,7 @@ import 'swiper/components/pagination/pagination.min.css'
 import 'swiper/components/navigation/navigation.min.css'
 import Card from "@/app/components/Card";
 
-import {sampleMap} from './Demo'; // import sampleMap from Demo.js
+import {sampleMap} from '../../../public/Demo'; // import sampleMap from Demo.js
 const Collections = () => {
     const swiperRef = useRef(null); // create a ref for Swiper instance
     return (
