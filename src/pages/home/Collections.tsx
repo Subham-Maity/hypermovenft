@@ -35,7 +35,7 @@ const Collections = () => {
                     clickable: true,
                 }}
                 freeMode={true}
-                className="mx-auto m-4"
+                className="mx-auto m-8"
             >
                 {sampleMap.map((item, i) => (
                     <SwiperSlide key={i}>

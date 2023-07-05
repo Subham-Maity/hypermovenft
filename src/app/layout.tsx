@@ -9,6 +9,7 @@ import {
     walletConnect,
 } from "@thirdweb-dev/react";
 import Head from "next/head";
+import Footer from "@/app/components/Footer";
 
 const inter = Inter({subsets: ["latin"]});
 const activeChain = "ethereum";
@@ -27,6 +28,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
             </Head>
             <Navbar/>
             {children}
+            <Footer/>
         </ThirdwebProvider>
         </body>
         </html>

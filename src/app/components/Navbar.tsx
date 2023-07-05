@@ -112,7 +112,7 @@ const Navbar = () => {
               onClick={() => setShowSearch(!showSearch)}
           />
         </span>
-               <ConnectWallet/>
+                <ConnectWallet/>
             </div>
 
             {/* Sidebar */}
