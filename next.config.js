@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images:{
-        domains: ['fabweltmarketplace.s3.us-east-2.amazonaws.com']
+        domains:['fabweltmarketplace.s3.us-east-2.amazonaws.com']
     }
 }
 

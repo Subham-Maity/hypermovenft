@@ -1,8 +1,14 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+import Image from 'next/image';
 
-const LargeCard = ({banner, images, text, createdBy}) => {
+interface LargeCardProps {
+    banner?: string;
+    images?: { image: string }[];
+    text?: string;
+    createdBy?: string;
+}
+
+const LargeCard: React.FC<LargeCardProps> = ({ banner, images, text, createdBy }) => {
     return (
         <div className="w-full mt-2 bg-[#343444] rounded-2xl m-5">
             {banner && (
@@ -33,13 +39,9 @@ const LargeCard = ({banner, images, text, createdBy}) => {
                 </div>
             )}
 
-            {text && (
-                <div className="text-white mt-4 p-2">{text}</div>
-            )}
+            {text && <div className="text-white mt-4 p-2">{text}</div>}
 
-            {createdBy && (
-                <div className="text-white mt-2 p-2">Created by {createdBy}</div>
-            )}
+            {createdBy && <div className="text-white mt-2 p-2">Created by {createdBy}</div>}
         </div>
     );
 };

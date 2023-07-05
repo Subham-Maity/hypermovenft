@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3d5dcc9f-b609-4949-a4b9-b8fafff3fdb3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/LargeCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/LargeCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Auctions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Auctions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Banner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Collections.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Collections.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Features.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Features.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Viewed.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Viewed.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2S5kYNrqY40Pj1wO2fEzSowtqcc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "typescript-v",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "ts.external.directory.path": "C:\\Users\\maity\\OneDrive\\Github\\O\\MG\\NFT\\hypermovenft\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\public" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d5dcc9f-b609-4949-a4b9-b8fafff3fdb3" name="Changes" comment="" />
+      <created>1688443876890</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688443876890</updated>
+      <workItem from="1688443878755" duration="23658000" />
+      <workItem from="1688476356903" duration="42000" />
+      <workItem from="1688476407350" duration="4301000" />
+      <workItem from="1688531223869" duration="2038000" />
+      <workItem from="1688534741442" duration="16185000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

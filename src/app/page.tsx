@@ -1,24 +1,18 @@
-import Banner from '@/pages/home/Banner'
+import Image from 'next/image'
+import Banner from "@/pages/home/Banner";
 import Collections from "@/pages/home/Collections";
 import Features from "@/pages/home/Features";
-import Auctions from "@/pages/home/Auctions";
 import Viewed from "@/pages/home/Viewed";
-
+import Auctions from "@/pages/home/Auctions";
 
 export default function Home() {
-    const sampleMap = 4
     return (
-        <main>
-
+        <main className="flex min-h-screen flex-col items-center justify-between">
             <Banner/>
-            {/*<MetaConnectAlert/>*/}
-            <Collections sampleMap={sampleMap}/>
+            <Collections/>
             <Features/>
-
-            <Viewed sampleMap={sampleMap}/>
-
+            <Viewed/>
             <Auctions/>
-
         </main>
     )
 }

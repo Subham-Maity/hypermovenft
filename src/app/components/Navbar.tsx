@@ -1,15 +1,14 @@
 "use client"
+
 import React, {useState} from "react";
 import {useRouter} from "next/navigation";
 import Image from "next/image";
 import {FaSearch, FaBars} from "react-icons/fa";
 import Link from "next/link";
 import logo from "../../../public/logo.png";
-import WalletConnect from "./Button/MainButton";
 import {FaTimes} from "react-icons/fa";
-import {FaWallet} from "react-icons/fa";
 import {ConnectWallet} from "@thirdweb-dev/react"
-import ConnectWallets from "@/app/components/Button/ConnectWallets";
+
 
 const Navbar = () => {
     const [activePage, setActivePage] = useState("home");
@@ -17,7 +16,6 @@ const Navbar = () => {
     const [showSearch, setShowSearch] = useState(false);
     const [showSidebar, setShowSidebar] = useState(false); // State for sidebar visibility
     const router = useRouter();
-
 
     const links = [
         {
@@ -55,10 +53,9 @@ const Navbar = () => {
             href: "/contact",
             active: activePage === "contact",
         },
-
     ];
 
-    const handleSearch = (e) => {
+    const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         // do something with searchTerm
     };
@@ -74,7 +71,7 @@ const Navbar = () => {
                 />
                 <div className="lg:w-auto w-[100px]">
                     <Link href="/">
-                        <Image src={logo} width={250} height={250} alt="Logo"/>
+                        <Image src={logo} width={250} height={250} alt="Logo" />
                     </Link>
                 </div>
             </div>
@@ -109,24 +106,18 @@ const Navbar = () => {
                     </form>
                 )}
                 <span className="hidden lg:flex">
-        <FaSearch
-            size={32}
-            color={showSearch ? "#ffffff" : "#9ca3af"}
-            onClick={() => setShowSearch(!showSearch)}
-        />
+          <FaSearch
+              size={32}
+              color={showSearch ? "#ffffff" : "#9ca3af"}
+              onClick={() => setShowSearch(!showSearch)}
+          />
         </span>
-                <div className="">
-
-                    <ConnectWallet title="Wallet Connect " classNames="text-sm lg:text-xl" icon={<FaWallet size={16}/>}/>
-
-
-                </div>
+                <ConnectWallet/>
             </div>
 
             {/* Sidebar */}
             {showSidebar && (
-                <div
-                    className="fixed top-0 left-0 h-screen w-60 bg-zinc-950 transition-transform duration-300 transform -translate-x-1">
+                <div className="fixed top-0 left-0 h-screen w-60 bg-zinc-950 transition-transform duration-300 transform -translate-x-1">
                     <FaTimes
                         size={24}
                         color="#9ca3af"
@@ -136,12 +127,13 @@ const Navbar = () => {
                     <ul className="flex flex-col space-y-4 mt-8 pl-8">
                         {links.map((link) => (
                             <li key={link.label}>
-                                <Link href={link.href} className={`text-xl ${
-                                    link.active ? "text-white" : "text-gray-400"
-                                }`}>
-
+                                <Link
+                                    href={link.href}
+                                    className={`text-xl ${
+                                        link.active ? "text-white" : "text-gray-400"
+                                    }`}
+                                >
                                     {link.label}
-
                                 </Link>
                             </li>
                         ))}
