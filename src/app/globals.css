@@ -79,3 +79,30 @@ nav.breadcrumb li:hover a {
     }
 }
 
+/* Add styles for button state */
+button[type="submit"]:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Adjust button and field width */
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+}
+
+/* Make button and field more rounded */
+input[type="text"],
+input[type="email"],
+select,
+textarea,
+button[type="submit"] {
+    border-radius: 9999px;
+}

@@ -40,7 +40,7 @@ const Navbar = () => {
         },
         {
             label: "Lend/Rend",
-            href: "/lend-rend",
+            href: "https://market.renft.io/collections/fabweltnftm?chain=137",
             active: activePage === "lend-rend",
         },
         {

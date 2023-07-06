@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d5dcc9f-b609-4949-a4b9-b8fafff3fdb3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/auction/Heading/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/auction/OnSale/Onsale.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/collection/in-game-assets-348/Heading/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/collection/in-game-assets-348/OnSale/Onsale.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/contact.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Contact/Contact.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/contact/Heading/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/auction/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auction/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/collection/in-game-assets-348/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/collection/in-game-assets-348/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auction/OnSale/Onsale.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auction/OnSale/Onsale.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "typescript-v",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/maity/OneDrive/Github/O/MG/NFT/hypermovenft/src/app/auction",
+    "last_opened_file_path": "C:/Users/maity/OneDrive/Github/O/MG/NFT/hypermovenft/src/app/contact",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,14 +53,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\src\app\contact" />
       <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\src\app\auction" />
       <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\src\app\collection\in-game-assets-348" />
       <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\src\app\collection\collectables-977" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\public" />
       <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\public\banner" />
       <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\src\app\collection\consumables-164" />
-      <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -76,7 +78,7 @@
       <workItem from="1688531223869" duration="2038000" />
       <workItem from="1688534741442" duration="20679000" />
       <workItem from="1688616736478" duration="387000" />
-      <workItem from="1688617417687" duration="17539000" />
+      <workItem from="1688617417687" duration="21762000" />
     </task>
     <servers />
   </component>

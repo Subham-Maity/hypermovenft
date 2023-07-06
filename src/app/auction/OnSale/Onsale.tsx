@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import Card from '@/app/components/Card';
-import { sampleMap } from '../../../../../public/Demo';
+import { sampleMap } from '../../../../public/Demo';
 import Link from 'next/link';
 
 const Onsale: React.FC = () => {
