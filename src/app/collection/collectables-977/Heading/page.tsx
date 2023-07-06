@@ -13,8 +13,8 @@ const ConsumablesHead = () => {
                 <div className="center">
 
                     <Breadcrumb
-                        href={['/', '/collection/consumables-164', '/collection/consumables-164']}
-                        text={['Home', 'Collections', 'consumables-164',]}
+                        href={['/', '/collection/collectables-977', '/collection/collectables-977']}
+                        text={['Home', 'Collections', 'collectables-977',]}
                     />
                 </div>
             </div>

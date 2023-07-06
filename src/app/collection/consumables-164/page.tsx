@@ -12,11 +12,11 @@ const Page = () => {
             <BannerCard
                 img="https://fabweltmarketplace.s3.us-east-2.amazonaws.com/2022/8/22/collectionBanner/banner-collection.png"
                 href="https://market.fabwelt.com/collection/consumables-164"
-                TabText={['Features', 'Values', 'Roadmap']}
+                TabText={['On Sale', 'On Auction']}
                 Child={[<Onsale key={0}/>]}
             />
            </div>
-
+            <div className="mb-16"></div>
         </div>
     );
 };
