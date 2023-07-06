@@ -3,34 +3,79 @@
 @tailwind utilities;
 
 
-
 body {
-  background:  radial-gradient(circle, rgba(12,99,118,1) 9%, rgba(23,22,33,1) 65%, rgba(97,17,55,1) 100%);
+    background: radial-gradient(circle, rgba(12, 99, 118, 1) 9%, rgba(23, 22, 33, 1) 65%, rgba(97, 17, 55, 1) 100%);
 
 }
 
 @layer components {
-  .aquire {
-    font-family: "Aquire", sans-serif;
-  }
+    .aquire {
+        font-family: "Aquire", sans-serif;
+    }
 }
 
 
 .bg-collection-custom {
-  background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(60,20,44,1) 0%, rgba(14,78,85,1) 55%, rgba(60,19,44,1) 100%, rgba(0,212,255,1) 100%);
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(60, 20, 44, 1) 0%, rgba(14, 78, 85, 1) 55%, rgba(60, 19, 44, 1) 100%, rgba(0, 212, 255, 1) 100%);
 }
 
 .bg-features-custom {
-  background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(26,20,33,1) 0%, rgba(69,19,50,1) 49%, rgba(20,20,37,1) 100%, rgba(0,212,255,1) 100%);
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(26, 20, 33, 1) 0%, rgba(69, 19, 50, 1) 49%, rgba(20, 20, 37, 1) 100%, rgba(0, 212, 255, 1) 100%);
 }
 
 .bg-viewed-custom {
-  background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,89,87,1) 0%, rgba(21,23,36,1) 49%, rgba(18,55,61,1) 100%, rgba(0,212,255,1) 100%);
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 89, 87, 1) 0%, rgba(21, 23, 36, 1) 49%, rgba(18, 55, 61, 1) 100%, rgba(0, 212, 255, 1) 100%);
 }
 
 
-.card-container {
-  width: 90%; /* adjust this value as needed */
-  margin: 0 auto; /* center the container horizontally */
+nav.breadcrumb {
+    padding: 1em;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px; /* Increase the breadcrumb size */
+}
+
+nav.breadcrumb ol {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+nav.breadcrumb li {
+    display: inline;
+}
+
+nav.breadcrumb li + li::before {
+    display: inline-block;
+    margin: 0 0.5em; /* Increase the space between breadcrumb items */
+    transform: rotate(15deg);
+    border-right: 0.1em solid currentColor;
+    height: 0.8em;
+    content: "";
+}
+
+nav.breadcrumb [aria-current="page"] {
+    color: #37cfc2;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Add hover effect */
+nav.breadcrumb li:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Optional: Change the color when hovering */
+nav.breadcrumb li:hover a {
+    color: #37cfc2;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 640px) {
+    nav.breadcrumb {
+        font-size: 14px; /* Decrease the breadcrumb size for smaller screens */
+    }
 }
 

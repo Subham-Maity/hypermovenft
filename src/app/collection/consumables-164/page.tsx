@@ -2,10 +2,12 @@
 import React from 'react';
 import BannerCard from "@/app/components/BannerCard";
 import Onsale from "@/app/collection/consumables-164/OnSale/Onsale";
+import ConsumablesHead from "@/app/collection/consumables-164/Heading/page";
 
 const Page = () => {
     return (
         <div >
+            <ConsumablesHead/>
            <div className="mt-10">
             <BannerCard
                 img="https://fabweltmarketplace.s3.us-east-2.amazonaws.com/2022/8/22/collectionBanner/banner-collection.png"

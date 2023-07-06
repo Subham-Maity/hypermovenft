@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d5dcc9f-b609-4949-a4b9-b8fafff3fdb3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/banner/banner-collection.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/auction/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/collection/collectables-977/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/collection/consumables-164/OnSale/Onsale.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/collection/consumables-164/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/collection/in-game-assets-348/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/BannerCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/collection/consumables-164/Heading/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Breadcrumb/Breadcrumb.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/Collections.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Collections.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/Features.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Features.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/collection/consumables-164/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/collection/consumables-164/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/BannerCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/BannerCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +24,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2S5kYNrqY40Pj1wO2fEzSowtqcc" />
   <component name="ProjectViewState">
@@ -78,7 +69,7 @@
       <workItem from="1688531223869" duration="2038000" />
       <workItem from="1688534741442" duration="20679000" />
       <workItem from="1688616736478" duration="387000" />
-      <workItem from="1688617417687" duration="8989000" />
+      <workItem from="1688617417687" duration="14404000" />
     </task>
     <servers />
   </component>

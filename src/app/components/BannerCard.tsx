@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Card, CardMedia, CardContent, Typography, Tabs, Tab } from '@material-ui/core';
 import { Rotate90DegreesCcw } from '@material-ui/icons';
-import Link from 'next/link';
+
 
 const useStyles = makeStyles({
     root: {
