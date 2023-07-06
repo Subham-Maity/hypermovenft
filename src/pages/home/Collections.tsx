@@ -30,7 +30,13 @@ const Collections = () => {
                         spaceBetween: 0,
                     },
                 }}
-                navigation
+                navigation= {
+                    {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    }
+                }
+
                 pagination={{
                     clickable: true,
                 }}

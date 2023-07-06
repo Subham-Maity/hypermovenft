@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import LargeCard from '@/app/components/LargeCard';
 import Link from 'next/link';
 
