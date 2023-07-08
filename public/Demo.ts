@@ -6,7 +6,7 @@ export const sampleMap = [
     price: "Price: $9.99",
     loveCount: 5,
     label: "POLYGON",
-    link: "https://example.com/link1",
+    link: "/nft",
     multiplier: "Multiplier 2x"
   },
   {
@@ -15,7 +15,7 @@ export const sampleMap = [
     price: "Price: $17.99",
     loveCount: 12,
     label: "POLYGON",
-    link: "https://example.com/link2",
+    link: "/nft",
     multiplier: "Multiplier 10x"
   },
   {
@@ -24,7 +24,7 @@ export const sampleMap = [
     price: "Price: $18.99",
     loveCount: 13,
     label: "POLYGON",
-    link: "https://example.com/link2",
+    link: "/nft",
     multiplier: "Multiplier 15x"
   },
   {
@@ -33,7 +33,7 @@ export const sampleMap = [
     price: "Price: $15.99",
     loveCount: 18,
     label: "POLYGON",
-    link: "https://example.com/link2",
+    link: "/nft",
     multiplier: "Multiplier 17x"
   },
   {
@@ -42,7 +42,7 @@ export const sampleMap = [
     price: "Price: $11.99",
     loveCount: 23,
     label: "POLYGON",
-    link: "https://example.com/link2",
+    link: "/nft",
     multiplier: "Multiplier 11x"
   },
   {
@@ -51,7 +51,7 @@ export const sampleMap = [
     price: "Price: $39.99",
     loveCount: 29,
     label: "Label 2",
-    link: "https://example.com/link2",
+    link: "/nft",
     multiplier: "Multiplier 19x"
   },
   {
@@ -60,7 +60,7 @@ export const sampleMap = [
     price: "Price: $29.99",
     loveCount: 32,
     label: "POLYGON",
-    link: "https://example.com/link2",
+    link: "/nft",
     multiplier: "Multiplier 28x"
   }
 ];
