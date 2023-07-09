@@ -6,15 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3d5dcc9f-b609-4949-a4b9-b8fafff3fdb3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/LargeCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/LargeCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/Auctions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Auctions.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/Banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Banner.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/Collections.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Collections.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/Features.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Features.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/Viewed.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Viewed.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/nft/Purchase/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/nft/Purchase/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/nft/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/nft/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +21,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2S5kYNrqY40Pj1wO2fEzSowtqcc" />
   <component name="ProjectViewState">
@@ -42,19 +35,29 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "typescript-v",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/maity/OneDrive/Github/O/MG/NFT/hypermovenft/src/app/nft",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "actions.on.save",
+    "settings.editor.selected.configurable": "inlay.hints",
     "ts.external.directory.path": "C:\\Users\\maity\\OneDrive\\Github\\O\\MG\\NFT\\hypermovenft\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\src\app\nft" />
+      <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\src\app\contact" />
+      <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\src\app\auction" />
+      <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\src\app\collection\in-game-assets-348" />
+      <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\src\app\collection\collectables-977" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\public" />
+      <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\public\banner" />
+      <recent name="C:\Users\maity\OneDrive\Github\O\MG\NFT\hypermovenft\src\app\collection\consumables-164" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -69,7 +72,13 @@
       <workItem from="1688476356903" duration="42000" />
       <workItem from="1688476407350" duration="4301000" />
       <workItem from="1688531223869" duration="2038000" />
-      <workItem from="1688534741442" duration="16185000" />
+      <workItem from="1688534741442" duration="20679000" />
+      <workItem from="1688616736478" duration="387000" />
+      <workItem from="1688617417687" duration="22794000" />
+      <workItem from="1688644913921" duration="3814000" />
+      <workItem from="1688703934694" duration="5331000" />
+      <workItem from="1688791876788" duration="3333000" />
+      <workItem from="1688814115047" duration="12244000" />
     </task>
     <servers />
   </component>

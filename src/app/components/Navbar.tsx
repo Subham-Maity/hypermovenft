@@ -25,22 +25,22 @@ const Navbar = () => {
         },
         {
             label: "Consumables",
-            href: "/collection",
+            href: "/collection/consumables-164",
             active: activePage === "consumables",
         },
         {
             label: "Collectibles",
-            href: "/collectibles",
+            href: "/collection/collectables-977",
             active: activePage === "collectibles",
         },
         {
             label: "In Game Assets",
-            href: "/in-game-assets",
+            href: "/collection/in-game-assets-348",
             active: activePage === "in-game-assets",
         },
         {
             label: "Lend/Rend",
-            href: "/lend-rend",
+            href: "https://market.renft.io/collections/fabweltnftm?chain=137",
             active: activePage === "lend-rend",
         },
         {
