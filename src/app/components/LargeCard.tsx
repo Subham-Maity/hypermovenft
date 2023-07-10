@@ -10,7 +10,8 @@ interface LargeCardProps {
 
 const LargeCard: React.FC<LargeCardProps> = ({banner, images, text, createdBy}) => {
     return (
-        <div className=" w-96 flex flex-col bg-[#343444] rounded-2xl overflow-hidden ">
+        <div className="">
+        <div className=" w-full flex flex-col bg-[#343444] rounded-2xl overflow-hidden ">
 
             {banner && (
                 <div className="flex justify-center">
@@ -40,6 +41,7 @@ const LargeCard: React.FC<LargeCardProps> = ({banner, images, text, createdBy}) 
 
             {createdBy && <div className="text-white mt-2 p-2">Created by {createdBy}</div>}
 
+        </div>
         </div>
     );
 };
