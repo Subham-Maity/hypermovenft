@@ -23,7 +23,6 @@ const Viewed: React.FC = () => {
                             price={item.price}
                             loveCount={item.loveCount}
                             label={item.label}
-                            link={item.link}
                             isHoverable={false}
                             multiplier={item.multiplier} // Make `multiplier` optional in CardProps
                         />

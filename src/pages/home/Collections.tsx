@@ -12,12 +12,12 @@ import { FreeMode, Pagination } from "swiper/modules";
 
 const Collections = () => {
     return (
-        <section className="w-full p-8 bg-collection-custom">
+        <section className="h-auto w-full p-8 bg-collection-custom">
             <div className="flex flex-col items-center md:flex-row md:justify-between md:px-16">
                 <div className="text-4xl text-amber-50 font-bold mb-4">Popular Collections</div>
-                <Link href="/">
-                    <div className="text-xl text-amber-50 font-bold">EXPLORE MORE</div>
-                </Link>
+                {/*<Link href="/">*/}
+                {/*    <div className="text-xl text-amber-50 font-bold">EXPLORE MORE</div>*/}
+                {/*</Link>*/}
             </div>
 
             <Swiper
@@ -60,7 +60,7 @@ const Collections = () => {
                             price={item.price}
                             loveCount={item.loveCount}
                             label={item.label}
-                            link={item.link}
+
                             isHoverable={true}
                             multiplier={item.multiplier}
                         />

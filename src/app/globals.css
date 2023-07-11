@@ -16,11 +16,12 @@ body {
 
 
 .bg-collection-custom {
-    background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(60, 20, 44, 1) 0%, rgba(14, 78, 85, 1) 55%, rgba(60, 19, 44, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    background : #000000;
+    /*background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(60, 20, 44, 1) 0%, rgba(14, 78, 85, 1) 55%, rgba(60, 19, 44, 1) 100%, rgba(0, 212, 255, 1) 100%);*/
 }
 
 .bg-features-custom {
-    background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(26, 20, 33, 1) 0%, rgba(69, 19, 50, 1) 49%, rgba(20, 20, 37, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    background-image: linear-gradient(90deg, rgb(223, 108, 57) 0%, rgb(192, 31, 166) 0%, rgb(114, 82, 185) 49%, rgb(78, 213, 201) 100%, rgba(0, 212, 255, 1) 100%);
 }
 
 .bg-viewed-custom {

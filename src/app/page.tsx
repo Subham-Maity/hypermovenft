@@ -7,7 +7,7 @@ import Auctions from "@/pages/home/Auctions";
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between">
+        <main className="">
             <Banner/>
             <Collections/>
             <Features/>

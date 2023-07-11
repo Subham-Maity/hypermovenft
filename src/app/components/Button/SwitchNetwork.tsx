@@ -1,71 +1,55 @@
-import React, {useState} from "react";
-import {FaEthereum} from "react-icons/fa";
-import {BiShapePolygon} from "react-icons/bi";
-
+import React, { useState } from "react";
+import { CHAINS } from "@/config/chains";
+import { useWeb3React } from "@web3-react/core";
+import { useAppChainId, useSwitchChainId } from "@/store/app/hook";
 // Define a type for the props of the component
-type SwitchNetworkProps = {
-    href?: string[]; // An optional array of links for each icon
-    text?: string[]; // An optional array of names for each icon
-    Child?: React.ReactNode[]; // An optional array of children elements for each icon
-    Icons?: React.ReactNode[]; // An optional array of icons for each icon
-};
 
 // Define the component as a function
-const SwitchNetwork: React.FC<SwitchNetworkProps> = ({
-                                                         href,
-                                                         text,
-                                                         Child,
-                                                         Icons,
-                                                     }) => {
-    // Use a state variable to store the index of the selected icon
-    const [selectedIndex, setSelectedIndex] = useState(0);
-
-    // Use a state variable to store the visibility of the dropdown menu
+const SwitchNetwork: React.FC = () => {
     const [showMenu, setShowMenu] = useState(false);
 
-    // Define a function to handle the click on the button
+    const appChainId = useAppChainId();
+
     const handleClick = () => {
         // Toggle the showMenu state
         setShowMenu((prev) => !prev);
     };
 
-    // Define a function to handle the selection of an icon from the menu
-    const handleSelect = (index: number) => {
-        // Set the selectedIndex state to the index of the clicked icon
-        setSelectedIndex(index);
-        // Hide the menu
-        setShowMenu(false);
-    };
+    //   const handleSelect = (index: number) => {
+    //     setShowMenu(false);
+    //   };
 
-    // Return the JSX element for the component
+    const switchChain = useSwitchChainId();
+
+    // Add a new state for the selected icon
+    const [selectedIcon, setSelectedIcon] = useState(CHAINS?.[Number(appChainId)]?.icon);
+
     return (
         <div className="relative">
-            {/* The button element that shows the selected icon */}
             <button
-                className="flex items-center justify-center bg-gray-200 rounded-full p-2 focus:outline-none"
+                className="flex items-center justify-center bg-gray-200 rounded-full p-2 focus:outline-none xs:w-12 xs:h-12 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16"
                 onClick={handleClick}
             >
-                {/* Check if Icons prop is defined and has an element at selectedIndex */}
-                {Icons && Icons[selectedIndex]}
+                {/* Use the selected icon instead of the appChainId icon */}
+                <img src={selectedIcon} width={32} height={32} />
             </button>
-            {/* The dropdown menu element that shows all the icons */}
             {showMenu && (
-                <div className="absolute top-full left-0 bg-white shadow-md rounded-md p-2 mt-2">
-                    {/* Map over the Icons prop and render each icon as a menu item */}
-                    {Icons &&
-                        Icons.map((icon, index) => (
-                            <a
-                                key={index}
-                                href={href ? href[index] : "#"} // Use the href prop or a default value for the link
-                                className="flex items-center p-2 hover:bg-gray-100 rounded-md" // Use tailwind css classes for styling
-                                onClick={() => handleSelect(index)} // Call the handleSelect function with the index of the icon
-                            >
-                                {icon} {/* Render the icon element */}
-                                <span
-                                    className="ml-2">{text ? text[index] : ""}</span> {/* Render the text prop or an empty string */}
-                                {Child && Child[index]} {/* Render the Child prop or nothing */}
-                            </a>
-                        ))}
+                <div className="absolute top-full left-0 bg-white shadow-md rounded-md p-2 mt-2 pr-4">
+                    {Object.entries(CHAINS).map((chain, index) => (
+                        <div
+                            key={index}
+                            className="flex items-center p-2 hover:bg-gray-100 rounded-md"
+                            onClick={() => {
+                                // Switch the chain and update the selected icon
+                                switchChain(Number(chain?.[0]));
+                                setSelectedIcon(chain?.[1]?.icon);
+                            }}
+                        >
+                            <img src={chain?.[1]?.icon} width={16} height={16} />
+                            <span className="ml-2">{chain?.[1]?.name}</span>{" "}
+                            {/* {Child && Child[index]} */}
+                        </div>
+                    ))}
                 </div>
             )}
         </div>
@@ -73,4 +57,4 @@ const SwitchNetwork: React.FC<SwitchNetworkProps> = ({
 };
 
 // Export the component as default
-export default SwitchNetwork
+export default SwitchNetwork;

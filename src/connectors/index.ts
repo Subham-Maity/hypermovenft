@@ -11,8 +11,10 @@ export let supportedChainIds = Object.keys(SUPPORTED_CHAIN_IDS)
 let rpcUrls = {} as { [chainId: number]: string };
 
 for (let k = 0; k < supportedChainIds?.length; k++) {
-  rpcUrls[supportedChainIds[k]] = chainConfig?.[k]?.[0]?.rpcUrls;
+  rpcUrls[supportedChainIds[k]] = chainConfig?.[k]?.[0]?.rpcUrls?.[0];
 }
+
+console.log({ supportedChainIds });
 
 export const injected = new InjectedConnector({
   supportedChainIds,

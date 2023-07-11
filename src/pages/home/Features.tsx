@@ -20,15 +20,15 @@ const Features: React.FC = () => {
 
 
     return (
-        <section className=" w-full p-8 min-h-screen h-auto bg-features-custom">
-            <div className="flex justify-between px-4 md:px-16 items-center w-full">
-                <div className="text-4xl text-amber-50 font-bold mb-4">Popular Collections</div>
+        <section className=" w-full p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20 h-auto bg-features-custom">
+            <div className="flex justify-between px-4 md:px-60 items-center w-full">
+                <div className="text-2xl sm:text-3xl md:text-4xl text-amber-50 font-bold mb-4">Popular Collections</div>
                 <Link href="/">
-                    <div className="text-xl text-amber-50 font-bold hidden md:block">EXPLORE MORE</div>
+                    <div className="text-lg sm:text-xl text-amber-50 font-bold hidden md:block">EXPLORE MORE</div>
                 </Link>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-screen-xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-21 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6 max-w-screen-xl mx-auto">
                 <LargeCard
 
                     banner="https://fabweltmarketplace.s3.us-east-2.amazonaws.com/2023/0/27/collectionBanner/85e40484-a3fa-4f02-a655-5c9c156160e3"
@@ -48,8 +48,7 @@ const Features: React.FC = () => {
                                 'https://fabweltmarketplace.s3.us-east-2.amazonaws.com/2022/9/27/nft/speed.webp',
                         },
                     ]}
-                    text="Sample Text"
-                    createdBy="abc"
+
                 />
                 <LargeCard
 
@@ -70,8 +69,7 @@ const Features: React.FC = () => {
                                 'https://fabweltmarketplace.s3.us-east-2.amazonaws.com/2022/9/27/nft/speed.webp',
                         },
                     ]}
-                    text="Sample Text"
-                    createdBy="abc"
+
                 />
 
             </div>

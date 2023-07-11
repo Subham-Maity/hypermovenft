@@ -1,8 +1,9 @@
+// Card.tsx
 import React, { useState } from "react";
 import { FaHeart, FaWallet } from "react-icons/fa";
 import MainButton from "@/app/components/Button/MainButton";
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface CardProps {
     image: string;
@@ -12,7 +13,6 @@ interface CardProps {
     label: string;
     isHoverable: boolean;
     multiplier: string;
-    link: string;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -23,11 +23,10 @@ const Card: React.FC<CardProps> = ({
                                        label,
                                        isHoverable,
                                        multiplier,
-                                       link,
                                    }) => {
     const [isHovered, setIsHovered] = useState(false);
+    const router = useRouter();
 
-    // Handle mouse enter and mouse leave to show floating button
     const handleMouseEnter = () => {
         setIsHovered(true);
     };
@@ -36,9 +35,23 @@ const Card: React.FC<CardProps> = ({
         setIsHovered(false);
     };
 
+    const handleBuyNow = () => {
+        const query = new URLSearchParams({
+            image,
+            imageText,
+            price,
+            loveCount: String(loveCount),
+            label,
+            multiplier,
+        }).toString();
+
+        router.push(`/nft?${query}`);
+    };
+
+
     return (
         <div
-            className="hover:-translate-y-2 transition-all ease-in-out duration-500 w-80 p-4 flex flex-col gap-4 bg-[#343444] rounded-2xl overflow-hidden relative"
+            className="hover:-translate-y-2 transition-all ease-in-out duration-500 w-80 p-4 flex flex-col gap-4 bg-[#17171b] rounded-2xl overflow-hidden relative"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseOut}
         >
@@ -71,14 +84,13 @@ const Card: React.FC<CardProps> = ({
                     />
                     {isHoverable && isHovered && (
                         <div className="absolute top-0 transition-all ease-in-out duration-500 left-0 w-full h-full bg-black/30 flex justify-center items-center">
-                            <Link href={link}>
-                                <MainButton
-                                    title="Buy Now"
-                                    classNames="text-sm"
-                                    icon={<FaWallet size={16} />}
-                                    isText={true}
-                                />
-                            </Link>
+                            <MainButton
+                                title="Buy Now"
+                                classNames="text-sm"
+                                icon={<FaWallet size={16} />}
+                                isText={true}
+                                onClick={handleBuyNow}
+                            />
                         </div>
                     )}
                 </div>
@@ -99,18 +111,15 @@ const Card: React.FC<CardProps> = ({
                     </div>
                 )}
 
-                {/* If floating button is not there the default sticky button will be applied */}
-
                 {!isHoverable && (
                     <div className="">
-                        <Link href={link}>
-                            <MainButton
-                                title="Buy Now"
-                                classNames="text-sm"
-                                icon={<FaWallet size={16} />}
-                                isText={true}
-                            />
-                        </Link>
+                        <MainButton
+                            title="Buy Now"
+                            classNames="text-sm"
+                            icon={<FaWallet size={16} />}
+                            isText={true}
+                            onClick={handleBuyNow}
+                        />
                     </div>
                 )}
             </div>

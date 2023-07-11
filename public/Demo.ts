@@ -64,3 +64,4 @@ export const sampleMap = [
     multiplier: "Multiplier 28x"
   }
 ];
+export default sampleMap;
