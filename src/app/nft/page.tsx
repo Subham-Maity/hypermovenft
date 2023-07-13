@@ -1,38 +1,56 @@
 "use client";
-import React from 'react';
+import React, { useMemo } from "react";
 import ConsumablesHead from "@/app/nft/Heading/page";
 import { sampleMap } from "../../../public/Demo";
 import Purchase from "@/app/nft/Purchase/page";
 import SimilarPage from "@/app/nft/Similar NFT/page";
+import router from "next/router";
+import { useTokens } from "@/store/tokens/hook";
+import { NFTTokenData } from "@/store/tokens";
+import { useAppChainId } from "@/store/app/hook";
+import { network } from "@/config/network";
+import { tokenContracts } from "@/config/contract";
+import { useSearchParams } from "next/navigation";
 
 const Page = () => {
-    // Assuming you want to use the first item from the sampleMap
-    const multiplier = sampleMap[3].multiplier;
+  const multiplier = sampleMap[3].multiplier;
+  const searchParams = useSearchParams();
 
-    return (
-        <div>
-            <ConsumablesHead multiplier={multiplier} />
+  // @ts-ignore
+  const tokenId = searchParams.get("tokenId");
 
-            <Purchase
-                image="https://fabweltmarketplace.s3.us-east-2.amazonaws.com/2023/3/27/nft/732f3377-321b-43cd-b224-8c7c87d17c9f"
-                heading="Multiplier 7x"
-                headingNumber="#19"
-                loveCount={84}
-                polygon="Polygon"
-                gamingAsset="Gaming Asset"
-                createdBy="Fabwelt"
-                contractAddress="0x1234...abcd"
-                itemId="#19"
-                price="0.5 ETH"
-                collection="Collection Name"
-                inGameAsset="In Game Asset Name"
-            />
+  const tokenData = useTokens();
 
-            <SimilarPage />
+  const selectedNFT = useMemo<NFTTokenData>(() => {
+    return tokenData[Number(tokenId)];
+  }, [tokenData, tokenId]);
 
-        </div>
+  const appChainId = useAppChainId();
 
-    );
+  return (
+    <div>
+      <ConsumablesHead multiplier={multiplier} />
+
+      <Purchase
+        image={selectedNFT?.metadata?.image}
+        heading={selectedNFT?.metadata?.name}
+        headingNumber={`#${selectedNFT?.tokenId}`}
+        loveCount={0}
+        polygon={network[appChainId]}
+        gamingAsset="Gaming Asset"
+        createdBy="Hypermove"
+        contractAddress={tokenContracts[appChainId]}
+        itemId={String(selectedNFT?.tokenId)}
+        price={String(selectedNFT?.price)}
+        collection="Hypermove Gaming"
+        inGameAsset="In Game Asset Name"
+        quantity={selectedNFT?.quantity}
+        availbleToBuy={!selectedNFT?.active}
+      />
+
+      <SimilarPage />
+    </div>
+  );
 };
 
 export default Page;

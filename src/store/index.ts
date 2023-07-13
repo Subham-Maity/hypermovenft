@@ -10,9 +10,11 @@ import storage from "redux-persist/lib/storage";
 
 // reducers
 import app from "./app";
+import tokens from "./tokens";
 
 const rootReducer = combineReducers({
   app,
+  tokens,
 });
 
 const store = configureStore({
@@ -20,7 +22,7 @@ const store = configureStore({
     {
       key: "root",
       storage,
-      blacklist: ["app"],
+      blacklist: ["app", "tokens"],
     },
     rootReducer
   ),

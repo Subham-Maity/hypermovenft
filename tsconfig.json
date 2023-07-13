@@ -8,7 +8,7 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -31,7 +31,7 @@
     "strictNullChecks": true
   },
   "include": [
-    "./src/app",
+    "./src/",
     "./next-app-env.d.ts",
     "next-env.d.ts",
     "**/*.ts",

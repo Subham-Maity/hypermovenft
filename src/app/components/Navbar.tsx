@@ -9,7 +9,6 @@ import logo from "../../../public/logo.png";
 import { FaTimes } from "react-icons/fa";
 import WalletManager from "./WalletManager";
 import { useAppChainId } from "@/store/app/hook";
-import MainButton from "@/app/components/Button/MainButton";
 import ProfileConnect from "@/app/components/Button/ProfileConnect";
 import SwitchNetwork from "@/app/components/Button/SwitchNetwork";
 import { FaEthereum, FaHive } from "react-icons/fa";
