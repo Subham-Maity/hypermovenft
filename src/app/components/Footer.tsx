@@ -23,15 +23,15 @@ const Footer = () => {
                     <div>
                         <Image src="/logo.png" width={150} height={100} alt="Logo"/>
                     </div>
-                    <div className="grid grid-cols-2 md:grid-cols-5 gap-2"><a href="#"
+                    <div className="grid grid-cols-6 md:grid-cols-5 gap-2"><a href="#"
                                                                               className="text-hover p-2 rounded-md hover:bg-blue-700 bg-zinc-600"><RiFacebookFill
                         className="w-6 h-6"/></a><a href="#"
                                                     className="text-hover p-2 rounded-md hover:bg-blue-700 bg-zinc-600">
-                        <RiTwitterFill className="w-6 h-6"/> </a><a href="#"
+                        <RiTwitterFill className="w-6 h-6"/> </a><a href="https://twitter.com/intent/follow?screen_name=hypermove_io"
                                                                     className="text-hover p-2 rounded-md hover:bg-blue-700 bg-zinc-600">
                         <RiInstagramFill className="w-6 h-6"/></a><a href="#"
                                                                      className="text-hover p-2 rounded-md hover:bg-blue-700 bg-zinc-600">
-                        <RiLinkedinBoxFill className="w-6 h-6"/></a><a href="#"
+                        <RiLinkedinBoxFill className="w-6 h-6"/></a><a href="https://discord.com/invite/mMWPVXxAXK"
                                                                        className="text-hover p-2 rounded-md hover:bg-blue-700 bg-zinc-600"><RiDiscordFill
                         className="w-6 h-6"/></a><a href="#"
                                                     className="text-hover p-2 rounded-md hover:bg-blue-700 bg-zinc-600"><RiGithubFill
@@ -40,9 +40,9 @@ const Footer = () => {
                             <RiYoutubeFill className="w-6 h-6"/>
                         </a><a href="#" className="text-hover p-2 rounded-md hover:bg-blue-700 bg-zinc-600">
                             <RiTelegramFill className="w-6 h-6"/>
-                        </a><a href="#" className="text-hover p-2 rounded-md hover:bg-blue-700 bg-zinc-600">
+                        </a><a href="https://t.me/Hypermove_io" className="text-hover p-2 rounded-md hover:bg-blue-700 bg-zinc-600">
                             <RiMediumFill className="w-6 h-6"/>
-                        </a><a href="#" className="text-hover p-2 rounded-md hover:bg-blue-700 bg-zinc-600">
+                        </a><a href="https://medium.com/@hypermove" className="text-hover p-2 rounded-md hover:bg-blue-700 bg-zinc-600">
                             <RiRedditFill className="w-6 h-6"/>
                         </a><a href="#" className="text-hover p-2 rounded-md hover:bg-blue-700 bg-zinc-600">
                             <RiChromeFill className="w-6 h-6"/>

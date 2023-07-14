@@ -28,7 +28,8 @@ export const useSwitchChainId = () => {
         dispatch(setAppChainId({ chainId: newAppChainId }));
 
         return true;
-      } catch (err) {
+      } catch (err:any) {//any add temp
+
         if (err.code === 4902) {
           const ethereum = window?.ethereum;
           /// @ts-ignore

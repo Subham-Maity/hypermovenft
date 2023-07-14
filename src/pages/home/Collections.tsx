@@ -66,7 +66,7 @@ const Collections = () => {
               price={String(item?.price)}
               loveCount={0}
               label={item?.metadata?.description}
-              isHoverable={item?.active}
+              isHoverable={false}
               multiplier={"10x"}
             />
           </SwiperSlide>

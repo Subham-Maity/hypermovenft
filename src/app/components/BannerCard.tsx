@@ -40,7 +40,7 @@ const BannerCard = ({ img, href, TabText, Child }: BannerCardProps) => {
     };
 
     return (
-        <div>
+        <div className="z-10">
             <Card className={`${classes.root} bg-gray-800`}>
                 <CardMedia className={classes.media} image={img} title="Banner Image">
                     <div className={`${classes.link} text-white`}>

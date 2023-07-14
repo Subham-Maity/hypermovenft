@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { CHAINS } from "@/config/chains";
 import { useWeb3React } from "@web3-react/core";
 import { useAppChainId, useSwitchChainId } from "@/store/app/hook";
+import Image from "next/image";
 // Define a type for the props of the component
 
 // Define the component as a function
@@ -25,13 +26,14 @@ const SwitchNetwork: React.FC = () => {
     const [selectedIcon, setSelectedIcon] = useState(CHAINS?.[Number(appChainId)]?.icon);
 
     return (
-        <div className="relative">
+        <div className="z-40 relative">
             <button
-                className="flex items-center justify-center bg-gray-200 rounded-full p-2 focus:outline-none xs:w-12 xs:h-12 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16"
+                className=" flex items-center justify-center bg-stone-100 rounded-full sm:p-1 md:p-1 p-1 focus:outline-none xs:w-12 xs:h-12 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-10 xl:h-10"
                 onClick={handleClick}
             >
                 {/* Use the selected icon instead of the appChainId icon */}
-                <img src={selectedIcon} width={32} height={32} />
+
+                <Image src={selectedIcon} alt="switch" width={30} height={30} />
             </button>
             {showMenu && (
                 <div className="absolute top-full left-0 bg-white shadow-md rounded-md p-2 mt-2 pr-4">
@@ -46,7 +48,7 @@ const SwitchNetwork: React.FC = () => {
                             }}
                         >
                             <img src={chain?.[1]?.icon} width={16} height={16} />
-                            <span className="ml-2">{chain?.[1]?.name}</span>{" "}
+                            <span className="ml-2 px-4">{chain?.[1]?.name}</span>{" "}
                             {/* {Child && Child[index]} */}
                         </div>
                     ))}

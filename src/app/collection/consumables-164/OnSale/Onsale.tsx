@@ -8,9 +8,9 @@ const Onsale: React.FC = () => {
   const nftData = useTokens();
 
   return (
-    <section className="px-4 md:px-16 p-8 w-full gap-2 justify-center items-center min-h-screen h-auto">
-      <div className="flex justify-between px-7 md:px-16 items-center w-full">
-        <div className=" grid grid-cols-1 md:grid-cols-5 gap-4 items-center justify-center">
+    <section className="px-6 md:px-16 p-8 w-full gap-2 justify-center items-center min-h-screen h-auto">
+      <div className="flex justify-between md:px-16 items-center w-full">
+        <div className=" grid grid-cols-1 md:grid-cols-4 gap-4 items-center justify-center">
           {Object.values(nftData).map((item: NFTTokenData, i) => (
             <Card
               key={i}

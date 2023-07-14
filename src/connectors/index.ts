@@ -5,7 +5,7 @@ import { APP_LOGO, APP_NAME } from "../config";
 import { InjectedConnector } from "@web3-react/injected-connector";
 
 export let supportedChainIds = Object.keys(SUPPORTED_CHAIN_IDS)
-  .map((key) => SUPPORTED_CHAIN_IDS[key])
+  .map((key) => (SUPPORTED_CHAIN_IDS as any)[key])
   .filter((e) => typeof e === "number") as number[];
 
 let rpcUrls = {} as { [chainId: number]: string };

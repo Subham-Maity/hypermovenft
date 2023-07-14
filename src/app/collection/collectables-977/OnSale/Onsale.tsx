@@ -8,8 +8,10 @@ const Onsale: React.FC = () => {
   const nftData = useTokens();
 
   return (
-    <section className="px-4 md:px-16 p-8 w-full gap-2 justify-center items-center min-h-screen h-auto">
-      <div className="flex justify-between px-7 md:px-16 items-center w-full">
+    <section className="px-4 md:px-16 p-8 w-full gap-2 justify-center items-center min-h-[550px] h-auto">
+
+        <p className="text-center text-white text-2xl md:text-4xl mt-60">No NFTs on sale yet</p>
+
         {/*<div className=" grid grid-cols-1 md:grid-cols-5 gap-4 items-center justify-center">*/}
         {/*    {sampleMap.map((item, i) => (*/}
         {/*        <Card*/}
@@ -25,7 +27,7 @@ const Onsale: React.FC = () => {
         {/*        />*/}
         {/*    ))}*/}
         {/*</div>*/}
-      </div>
+
     </section>
   );
 };
