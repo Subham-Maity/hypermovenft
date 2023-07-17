@@ -66,9 +66,9 @@ const Card: React.FC<CardProps> = ({
                 <div className="flex justify-center">
                     {/* Wrap the Image component with motion.div and add animation properties */}
                     <motion.div
-                        animate={{ x: [0, -10, 0] }} // move up and down by 10 pixels
-                        transition={{ duration: 2, ease: "easeInOut", repeat: Infinity }} // repeat the animation forever
-                        style={{ y: 0 }} // start from the original position
+                        animate={{ x: [0, -10, 0] }}
+                        transition={{ duration: 2, ease: "easeInOut", repeat: Infinity }}
+                        style={{ x: 0 }} // start from the original position
                     >
                         <Image
                             className="rounded-[40px] px-4"
