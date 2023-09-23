@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+  .footerIcons {
+    grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+  }
+}
+@media screen and (max-width: 588px) {
+  .foot {
+    width: 31rem !important;
+  }
+}
+@media screen and (max-width: 533px) {
+  .foot {
+   font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 470px) {
+  .foot {
+   font-size: 10px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+    .h3 {
+   font-size: 13px !important;
+    }
+  }

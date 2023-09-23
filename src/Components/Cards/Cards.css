@@ -1,0 +1,53 @@
+.backgroundColor {
+  background-color: rgba(23, 23, 27, 255);
+}
+.borderr {
+  border: 1px solid blue;
+}
+.main {
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+.slick-dots li button:before {
+  color: white !important;
+}
+.slick-dots {
+  padding-top: 10px;
+}
+/* .slick-slide {
+  padding-left: 0.5rem !important;
+} */
+.gradientDiv {
+  /* padding-bottom: 80px !important; */
+  background-image: linear-gradient(#b325a8, #7058ba, #51c0c6) !important;
+  /* padding-top: 80px; */
+}
+.gradientDivImg {
+  height: 24rem;
+  background: transparent;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+.midGradient {
+  height: 95%;
+}
+
+.grad {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.gunImgs {
+  padding-top: 18px !important;
+}
+
+@media screen and (max-width: 500px) {
+  .mediaFlex{
+    flex-direction: column !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .explore{
+    display: none !important ;
+  }
+}

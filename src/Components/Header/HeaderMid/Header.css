@@ -1,0 +1,28 @@
+.headerImg {
+    background-image: url('../../../Assets/AdobeStock_606098373.jpeg');
+    /* background-attachment: fixed; */
+    /* background-size: 100% 84% !important; */
+    background-size: cover;
+}
+.text {
+    font-size: 3rem;
+    white-space: nowrap;
+    line-height: 4rem;
+}
+.width{
+    width:50%;
+}
+.buttonss {
+    border: 2px solid blue;
+    width: 31%;
+    height: 3.4rem;
+    margin-right: 19px;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonss:hover {
+    border: none;
+    color: blue;
+}

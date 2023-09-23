@@ -1,0 +1,18 @@
+.btns {
+  border: 2px solid blue;
+  display: flex;
+  border-radius: 50px!important;
+  align-items: center;
+  justify-content: center;
+}
+.btns:hover {
+  border: 2px solid black !important;
+  color: blue;
+}
+
+.sp {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
